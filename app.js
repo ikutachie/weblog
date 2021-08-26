@@ -92,4 +92,5 @@ app.use((err, req, res, next)=>{
     res.render("/500.ejs",{ data });
   }
 });
-app.listen(3000);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT);
